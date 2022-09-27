@@ -2,7 +2,7 @@
 .page {
   min-width: 1100px;
   min-height: 1600px;
-  margin: auto;
+  margin: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -38,6 +38,7 @@
   list-style: none;
   padding-left: 0;
   margin-top: 8px;
+  margin-bottom: 0;
   color: #2f80ed;
 }
 
@@ -120,7 +121,8 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  margin: 24px 0;
+  margin-top: 24px;
+  margin-bottom: 0;
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
@@ -130,6 +132,7 @@
   gap: 40px;
   max-width: 760px;
   margin: 68px auto 0;
+  padding-left: 0;
 }
 
 .card {
@@ -270,7 +273,7 @@
 
 .person_name_feynman {
   /* Use correct values of top/right/bottom/left properties to position the element */
-  top: 30px;
+  top: -30px;
   left: 319px;
 }
 
@@ -455,6 +458,7 @@
 }
 
 .footer__column-heading {
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -474,4 +478,5 @@
 
 .footer__copyright {
   margin: 0;
+  padding: 0;
 }
