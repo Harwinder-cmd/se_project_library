@@ -69,6 +69,9 @@
 
 .header__image {
   /* Write styles here */
+  position: absolute;
+  top: 135px;
+  right: 20px;
   z-index: 1;
   max-width: 636px;
 }
@@ -117,13 +120,22 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  margin: 24px 0 0;
+  margin: 24px 0;
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+.staff__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 760px;
+  margin: 68px auto 0;
+}
 
 .card {
+  display: flex;
   background-color: #fff;
+  justify-content: space-between;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
@@ -232,6 +244,9 @@
 }
 
 /* Add the hover state styles for .events__more here */
+.events__more:hover {
+  color: #1f69c9;
+}
 
 .events__cover {
   flex-grow: 1;
@@ -321,14 +336,18 @@
 }
 
 .membership__steps {
+  display: flex;
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
+  justify-content: center;
+  gap: 40px;
   /* Add styles */
 }
 
 .step {
   /* Add styles */
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -349,6 +368,7 @@
 }
 
 .about {
+  display: flex;
   padding: 100px 80px;
   background-color: #1f1f1f;
   color: #fff;
@@ -362,11 +382,15 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  z-index: 1;
+  z-index: 2;
   max-width: 154px;
+  padding-right: 120px;
 }
 
 .about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
@@ -375,31 +399,45 @@
 
 .about__paragraph {
   margin: 0;
+  z-index: 1;
 }
 
 .about__circle {
+  position: absolute;
+  top: -121px;
+  left: -91px;
   background-color: #2f80ed;
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  z-index: 0;
 }
 
 .footer {
   box-sizing: border-box;
   background-color: #1f1f1f;
   color: #fff;
+  padding: 60px 102px 60px 80px;
 }
 
 .footer__columns {
+  display: flex;
+  min-height: 224px;
+  justify-content: flex-end;
+  column-gap: 100px;
+}
+.footer__column {
 }
 
 .footer__column_content_hours {
+  margin-left: auto;
 }
 
 .footer__column_content_social {
 }
 
 .footer__logo {
+  size: 116px 21px;
 }
 
 .footer__list {
@@ -410,9 +448,14 @@
 }
 
 .footer__list-item {
+  margin-bottom: 16px;
+}
+.footer__list-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .footer__column-heading {
+  margin-bottom: 20px;
 }
 
 .footer__column-link {
@@ -426,7 +469,9 @@
 }
 
 .footer__social-icon {
+  size: 16px;
 }
 
 .footer__copyright {
+  margin: 0;
 }
